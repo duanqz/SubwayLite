@@ -1,0 +1,11 @@
+# line
+CREATE TABLE "line" ("_id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , "name" VARCHAR NOT NULL , "color" VARCHAR)
+
+# station
+CREATE TABLE "station" ("_id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , "name" VARCHAR NOT NULL , "detail" TEXT, "isTransfer" BOOL, "latitude" FLOAT, "longitude" FLOAT)
+
+# hop
+CREATE TABLE "hop" ("_id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , "station1_id" INTEGER NOT NULL , "station2_id" INTEGER NOT NULL , "time_cost" FLOAT, "distance" FLOAT)
+
+# map_line_station
+CREATE TABLE "map_line_station" ("_id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , "line_id" INTEGER NOT NULL , "station_id"  NOT NULL )

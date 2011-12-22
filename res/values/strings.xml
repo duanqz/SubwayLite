@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">SubwayLite!</string>
+    <string name="app_name">SubwayLite</string>
+    
+    <!-- Title -->
+    <string name="titleSelStation">Select a station</string>
+    
+    <!-- Label -->
+   	<string name="labelStart">From : </string>
+   	<string name="labelEnd">To : </string>
+   	<string name="labelMap">Map</string>
+   	<string name="labelAbout">About</string>
+   	<string name="labelExit">Exit</string>
+   	<string name="labelOK">OK</string>
+   	<string name="labelCancel">Cancel</string>
+   	<string name="labelZoomIn">Zoom In</string>
+   	<string name="labelZoomOut">Zoom Out</string>
+   	<string name="labelInfo">Result information</string>
+   	
+    <!-- Message -->
+    <string name="msgAbout">A subway tool for indigena.</string>
+    
+    <!-- Button -->
+    <string name="btnSearch">Search</string>
+    <string name="btnDetail">Detail</string>
+</resources>
