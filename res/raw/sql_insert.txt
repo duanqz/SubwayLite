@@ -1,0 +1,223 @@
+# Lines
+INSERT INTO line(name) values("Line 1");
+INSERT INTO line(name) values("Line 2");
+INSERT INTO line(name) values("Line 4");
+INSERT INTO line(name) values("Line 5");
+INSERT INTO line(name) values("Line 10");
+INSERT INTO line(name) values("Line 13");
+INSERT INTO line(name) values("Line BaTong");
+INSERT INTO line(name) values("Line JiChang");
+INSERT INTO line(name) values("Line 8");
+
+# Stations
+# Line 13 Stations
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XiZhiMen", "", 1, 39.940697, 116.355472);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("DaZhongSi", "", 0, 39.966941, 116.345172);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("ZhiChunLu", "", 1, 39.976528,116.339893);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("WuDaoKou", "THU is here", 0, 39.992904, 116.337576);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("ShangDi", "Chinese Academy of Scieneces is here", 0, 40.033004,116.319852);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XiErQi", "Baidu, Lenovo and many other famouse IT corporationes are here", 1, 40.052848,116.305346);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("LongZe", "", 0, 40.070847,116.319551);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("HuiLongGuan", "", 0, 40.07111,116.336503);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("HuoYing", "", 1, 40.070748,116.361179);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("LiShuiQiao", "", 1, 40.053176,116.412592);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("BeiYuan", "", 0, 40.043058,116.434565);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("WangJingXi", "", 1, 39.99606,116.451645);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("ShaoYaoJu", "", 1, 39.977942,116.436067);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("GuangXiMen", "", 0, 39.968306,116.431818);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("LiuFang", "", 0, 39.958372,116.432762);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("DongZhiMen", "", 1, 39.941331,116.43362);
+
+# Line 10 Stations
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("BaGou", "", 0, 39.974226,116.292171);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("SuZhouJie", "", 0, 39.975936,116.306248);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("HaiDianHuangZhuang", "", 1, 39.977515,116.319466);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("ZhiChunLi", "", 0, 39.976462,116.327019);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XiTuCheng", "", 1, 39.976462,116.345065);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("MuDanYuan", "", 0, 39.976331,116.353798);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("JianDeMen", "", 0, 39.976857,116.381607);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("BeiTuCheng", "", 0,39.976989,116.394482);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("AnZhenMen", "", 0, 39.976989,116.406155);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("HuiXinXiJieNanKou", "", 1, 39.978304,116.419201);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("TaiYangGong", "", 0, 39.973042,116.447353);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("LiangMaQiao", "", 0, 39.949227,116.461773);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("NongYeZhanLanGuan", "", 0, 39.941726,116.461773);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("TuanJieHu", "", 0, 39.933565,116.461945);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("HuJiaLou", "", 0, 39.924877,116.46349);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("JinTaiXiZhao", "", 0, 39.917241,116.461773);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("GuoMao", "", 1, 39.909341,116.46143);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("ShuangJin", "", 0, 39.895119,116.463318);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("JingSong", "", 0, 39.886294,116.461258);
+
+# Line 8 Stations
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("AoTiZhongXin", "", 0, 39.98567,116.393795);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("AoLinPiKeGongYuan", "", 0, 40.000399,116.39328);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("SenLinGongYuanNanMen", "", 0, 40.01013,116.393108);
+
+# Line 4 Stations
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("AnHeQiaoBei", "", 0, 40.011905,116.270027);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("BeiGongMen", "", 0, 40.002635,116.275263);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XiYuan", "", 0, 39.998558,116.290627);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("YuanMingYuan", "", 0, 39.999479,116.309767);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("BeiDaDongMen", "", 0, 39.992246,116.315775);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("ZhongGuanCun", "", 0, 39.983894,116.316462);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("RenMinDaXue", "", 0, 39.96778,116.321096);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("WeiGongCun", "", 0, 39.957978,116.323071);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("GuoJiaTuShuGuan", "", 0, 39.943239,116.32513);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("DongWuYuan", "", 0, 39.938962,116.339979);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XinJieKou", "", 0, 39.941265,116.367788);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("PinAnLi", "", 0, 39.933697,116.372938);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XiSi", "", 0, 39.924745,116.372852);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("NingJingHuTong", "", 0, 39.916056,116.373796);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XiDan", "", 0, 39.907564,116.374226);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("XuanWuMen", "", 0, 39.907564,116.374226);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("CaiShiKou", "", 0, 39.889258,116.374397);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("TaoRanTing", "", 0, 39.878588,116.374311);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("MaJiaBao", "", 0, 39.853159,116.371565);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("JiaoMenXi", "", 0, 39.845449,116.371136);
+INSERT INTO station(name, detail, isTransfer, latitude, longitude) values("GongYiXiQiao", "", 0, 39.835827,116.370707);
+
+
+
+
+# Map_Line_Station
+# Line 13
+INSERT INTO map_line_station(line_id, station_id) values(6, 1);
+INSERT INTO map_line_station(line_id, station_id) values(6, 2);
+INSERT INTO map_line_station(line_id, station_id) values(6, 3);
+INSERT INTO map_line_station(line_id, station_id) values(6, 4);
+INSERT INTO map_line_station(line_id, station_id) values(6, 5);
+INSERT INTO map_line_station(line_id, station_id) values(6, 6);
+INSERT INTO map_line_station(line_id, station_id) values(6, 7);
+INSERT INTO map_line_station(line_id, station_id) values(6, 8);
+INSERT INTO map_line_station(line_id, station_id) values(6, 9);
+INSERT INTO map_line_station(line_id, station_id) values(6, 10);
+INSERT INTO map_line_station(line_id, station_id) values(6, 11);
+INSERT INTO map_line_station(line_id, station_id) values(6, 12);
+INSERT INTO map_line_station(line_id, station_id) values(6, 13);
+INSERT INTO map_line_station(line_id, station_id) values(6, 14);
+INSERT INTO map_line_station(line_id, station_id) values(6, 15);
+INSERT INTO map_line_station(line_id, station_id) values(6, 16);
+
+# Line 10
+INSERT INTO map_line_station(line_id, station_id) values(5, 17);
+INSERT INTO map_line_station(line_id, station_id) values(5, 18);
+INSERT INTO map_line_station(line_id, station_id) values(5, 19);
+INSERT INTO map_line_station(line_id, station_id) values(5, 20);
+INSERT INTO map_line_station(line_id, station_id) values(5, 21);
+INSERT INTO map_line_station(line_id, station_id) values(5, 22);
+INSERT INTO map_line_station(line_id, station_id) values(5, 23);
+INSERT INTO map_line_station(line_id, station_id) values(5, 24);
+INSERT INTO map_line_station(line_id, station_id) values(5, 25);
+INSERT INTO map_line_station(line_id, station_id) values(5, 26);
+INSERT INTO map_line_station(line_id, station_id) values(5, 27);
+INSERT INTO map_line_station(line_id, station_id) values(5, 28);
+INSERT INTO map_line_station(line_id, station_id) values(5, 29);
+INSERT INTO map_line_station(line_id, station_id) values(5, 30);
+INSERT INTO map_line_station(line_id, station_id) values(5, 31);
+INSERT INTO map_line_station(line_id, station_id) values(5, 32);
+INSERT INTO map_line_station(line_id, station_id) values(5, 33);
+INSERT INTO map_line_station(line_id, station_id) values(5, 34);
+INSERT INTO map_line_station(line_id, station_id) values(5, 35);
+INSERT INTO map_line_station(line_id, station_id) values(5, 3);
+INSERT INTO map_line_station(line_id, station_id) values(5, 13);
+
+# Line 8
+INSERT INTO map_line_station(line_id, station_id) values(9, 36);
+INSERT INTO map_line_station(line_id, station_id) values(9, 37);
+INSERT INTO map_line_station(line_id, station_id) values(9, 38);
+INSERT INTO map_line_station(line_id, station_id) values(9, 24);
+
+# Line 4
+INSERT INTO map_line_station(line_id, station_id) values(3, 39);
+INSERT INTO map_line_station(line_id, station_id) values(3, 40);
+INSERT INTO map_line_station(line_id, station_id) values(3, 41);
+INSERT INTO map_line_station(line_id, station_id) values(3, 42);
+INSERT INTO map_line_station(line_id, station_id) values(3, 43);
+INSERT INTO map_line_station(line_id, station_id) values(3, 44);
+INSERT INTO map_line_station(line_id, station_id) values(3, 45);
+INSERT INTO map_line_station(line_id, station_id) values(3, 46);
+INSERT INTO map_line_station(line_id, station_id) values(3, 47);
+INSERT INTO map_line_station(line_id, station_id) values(3, 48);
+INSERT INTO map_line_station(line_id, station_id) values(3, 49);
+INSERT INTO map_line_station(line_id, station_id) values(3, 50);
+INSERT INTO map_line_station(line_id, station_id) values(3, 51);
+INSERT INTO map_line_station(line_id, station_id) values(3, 52);
+INSERT INTO map_line_station(line_id, station_id) values(3, 53);
+INSERT INTO map_line_station(line_id, station_id) values(3, 54);
+INSERT INTO map_line_station(line_id, station_id) values(3, 55);
+INSERT INTO map_line_station(line_id, station_id) values(3, 56);
+INSERT INTO map_line_station(line_id, station_id) values(3, 57);
+INSERT INTO map_line_station(line_id, station_id) values(3, 58);
+INSERT INTO map_line_station(line_id, station_id) values(3, 59);
+INSERT INTO map_line_station(line_id, station_id) values(3, 1);
+INSERT INTO map_line_station(line_id, station_id) values(3, 19);
+
+# Hops
+# Line 13 Hops
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(1, 2, 3, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(2, 3, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(3, 4, 3, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(4, 5, 6, 3);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(5, 6, 3, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(6, 7, 5, 2);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(7, 8, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(8, 9, 3, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(9, 10, 5, 2);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(10, 11, 3, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(11, 12, 7, 3);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(12, 13, 3, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(13, 14, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(14, 15, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(15, 16, 2, 1);
+
+## Line 10 hops
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(17, 18, 1, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(18, 19, 1, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(19, 20, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(20, 3, 3, 1.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(3, 21, 3, 1.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(21, 22, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(22, 23, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(23, 24, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(24, 25, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(25, 26, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(26, 13, 3, 1.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(13, 27, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(27, 28, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(28, 29, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(29, 30, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(30, 31, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(31, 32, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(32, 33, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(33, 34, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(34, 35, 2, 1);
+
+# Line 8 Hops
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(24, 36, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(36, 37, 2, 1);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(37, 38, 1, 0.5);
+
+# Line 4 Hops
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(39, 40, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(40, 41, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(41, 42, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(42, 43, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(43, 44, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(44, 19, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(19, 45, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(45, 46, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(46, 47, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(47, 48, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(48, 1, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(1, 49, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(49, 50, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(50, 51, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(51, 52, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(52, 53, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(53, 54, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(54, 55, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(55, 56, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(56, 57, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(57, 58, 1, 0.5);
+INSERT INTO hop(station1_id, station2_id, time_cost, distance) values(58, 59, 1, 0.5);

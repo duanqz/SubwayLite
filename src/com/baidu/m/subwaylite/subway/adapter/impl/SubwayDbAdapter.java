@@ -1,5 +1,9 @@
 package com.baidu.m.subwaylite.subway.adapter.impl;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +18,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import com.baidu.m.subwaylite.R;
 import com.baidu.m.subwaylite.subway.adapter.SubwayAdapter;
 import com.baidu.m.subwaylite.subway.struct.Hop;
 import com.baidu.m.subwaylite.subway.struct.Line;
@@ -34,9 +39,15 @@ import com.baidu.m.subwaylite.subway.struct.Subway;
 public class SubwayDbAdapter implements SubwayAdapter {
 
 	private static final String TAG = "SubwayDbAdapter";
-	final String mapLineStaionSql = "SELECT line._id FROM map_line_station as t, line WHERE t.station_id=? AND t.line_id=line._id";
 	
-	private static final String DB_NAME = "cn_bj.db.sqlite";
+	private static final String SQL_CREATE_LINE = "CREATE TABLE \"line\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , \"name\" VARCHAR NOT NULL , \"color\" VARCHAR)";
+	private static final String SQL_CREATE_STATION = "CREATE TABLE \"station\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , \"name\" VARCHAR NOT NULL , \"detail\" TEXT, \"isTransfer\" BOOL, \"latitude\" FLOAT, \"longitude\" FLOAT)";
+	private static final String SQL_CREATE_HOP = "CREATE TABLE \"hop\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , \"station1_id\" INTEGER NOT NULL , \"station2_id\" INTEGER NOT NULL , \"time_cost\" FLOAT, \"distance\" FLOAT)";
+	private static final String SQL_CREATE_LINE_STATION = "CREATE TABLE \"map_line_station\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , \"line_id\" INTEGER NOT NULL , \"station_id\"  NOT NULL )";
+	
+	private final String mapLineStaionSql = "SELECT line._id FROM map_line_station as t, line WHERE t.station_id=? AND t.line_id=line._id";
+	
+	private static final String DB_NAME = "cn_bj.db";
 	private static final int DB_VERSION = 1;
 	
 	/** Context */
@@ -70,17 +81,43 @@ public class SubwayDbAdapter implements SubwayAdapter {
 	 */
 	private static class DatabaseHelper extends SQLiteOpenHelper {
 
+		private InputStream mSqlInsertData;
+		
 		public DatabaseHelper(Context context) {
 			super(context, DB_NAME, null, DB_VERSION);
+			
+			mSqlInsertData = context.getResources().openRawResource(R.raw.sql_insert);
 		}
 
 		@Override
 		public void onCreate(SQLiteDatabase db) {
+			db.execSQL(SQL_CREATE_LINE);
+			db.execSQL(SQL_CREATE_STATION);
+			db.execSQL(SQL_CREATE_HOP);
+			db.execSQL(SQL_CREATE_LINE_STATION);
+			
+			BufferedReader br = new BufferedReader(new InputStreamReader(mSqlInsertData));
+			String line = null;
+			try {
+				while( (line = br.readLine()) != null ) {
+					if(line.startsWith("#") == false && line.length() > 0) {
+						db.execSQL(line.trim());
+					}
+				}
+				br.close();
+			} catch(IOException e) {
+				Log.e(TAG, "Failed to insert data");
+			} finally {
+				br = null;
+			}
+			
 			Log.d(TAG, "Database created.");
 		}
 
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+			db.execSQL("DROP TABLE IF EXISTS " + DB_NAME);
+			onCreate(db);
 			Log.d(TAG, "Database upgraded.");
 		}
 		
@@ -124,7 +161,7 @@ public class SubwayDbAdapter implements SubwayAdapter {
 	public SubwayAdapter fillData() {
 		Assert.assertNotNull(subway);
 		
-		// Fill Line, Station and Hop orderly.
+		// Fill Line, Station and Hop by order.
 		fillLine();
 		fillStaiton();
 		fillHop();
@@ -165,7 +202,7 @@ public class SubwayDbAdapter implements SubwayAdapter {
 			// Map line used for initiating station.
 			mapLine.put(id, line);
 		}
-		Log.d(TAG, "Finishi filling lines data.");
+		Log.d(TAG, "Finish filling lines data.");
 	}
 
 	/**
